@@ -1,0 +1,35 @@
+export class Product {
+  product_id?: number;
+  model: string;
+  name: string;
+  description: string;
+  sku: string;
+  upc: string;
+  ean: string;
+  jan: string;
+  isbn: string;
+  mpn: string;
+  location: string;
+  quantity: number;
+  stock_status_id: number;
+  image: string;
+  manufacturer_id: number;
+  shipping: number;
+  price: number;
+  points: number;
+  tax_class_id: number;
+  date_available: string;
+  weight: number;
+  weight_class_id: number;
+  length: number;
+  width: number;
+  height: number;
+  length_class_id: number;
+  subtract: number;
+  minimum: number;
+  sort_order: number;
+  status: number;
+  viewed: number;
+  date_added: string;
+  date_modified: string;
+}

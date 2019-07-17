@@ -1,0 +1,20 @@
+<div class="body-back">
+  <div class="customer-header">
+    <div class="searchbox">
+    <button mat-raised-button (click)="openDialog()">Create Customer</button>
+      <input type="search" id="searchItem" name="searchItem" [(ngModel)]="searchItem" (keyup)="onSearch(searchItem)"
+        placeholder="Search Customers" />
+      <span class="search-clear"></span>
+    </div>
+  </div>
+  <div class="customer-body" id="style-3">
+    <app-customer-item *ngFor="let customer of customers" [customer]="customer"></app-customer-item>
+
+    <!-- <app-customer-item></app-customer-item>
+      <app-customer-item></app-customer-item>
+      <app-customer-item></app-customer-item>
+      <app-customer-item></app-customer-item>
+      <app-customer-item></app-customer-item>
+      <app-customer-item></app-customer-item> -->
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="card" (click)="onAddToCart(product)">
+  <div style="height:118px">
+    <img
+      src="{{ imgBaseUrl + product.image }}"
+      onError="this.src='https://via.placeholder.com/150';"
+      alt="product thumbnail"
+      style="width:100%"
+    />
+  </div>
+  <div class="container">
+    <p class="text">
+      {{ product.name }}
+    </p>
+    <p>₹{{ product.price }}</p>
+  </div>
+</div>
+
+<!-- BigImage
+https://engrave.in/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95//1/-/1-kafare-ganpati_1.jpg -->
+
+<!-- SmallImage
+https://engrave.in/media/catalog/product/cache/1/small_image/256x/602f0fa2c1f0d1ba5e241f914e856ff9/1/-/1-kafare-the-ascetic.jpg. -->

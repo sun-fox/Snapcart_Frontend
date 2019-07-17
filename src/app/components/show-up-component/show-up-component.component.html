@@ -1,0 +1,41 @@
+<form #f="ngForm" (ngSubmit)="onUpdateCustomer(f)" novalidate>
+    <h2 mat-dialog-title>Customer Credentials</h2>
+    <mat-dialog-content>Please fill in the details :</mat-dialog-content>
+    <mat-form-field>
+        <input id="firstname" matInput ngModel name="firstname" [(ngModel)]="customer.firstname">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input id="lastname" matInput [(ngModel)]="customer.lastname" ngModel name="lastname">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input id="imageurl" matInput [(ngModel)]="customer.imageurl" ngModel name="imageurl">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input id="email" matInput [(ngModel)]="customer.email" ngModel name="email">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input id="phone" matInput [(ngModel)]="customer.telephone" ngModel name="telephone">
+    </mat-form-field>
+
+    <mat-dialog-actions>
+        <button mat-button mat-dialog-close mat-dialog-close="false">Cancel</button>
+        <button class="btn btn-sm btn-success submit-button" type="submit">Submit</button>
+    </mat-dialog-actions>
+
+</form>
+
+
+
+
+
+
+
+<!-- <mat-form-field>
+              <input matInput placeholder="Enter your email" [formControl]="email" required>
+              <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+           -->

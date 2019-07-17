@@ -1,0 +1,14 @@
+<div class="orderline ">
+  <span class="product-name">
+    {{ cart_item.name }}
+  </span>
+  <span class="price"> ₹ {{ cart_item.price * cart_item.quantity }} </span>
+  <ul class="info-list">
+    <li class="info">
+      <em>
+        {{ cart_item.quantity }}
+      </em>
+      Unit(s) at ₹ {{ cart_item.price }} / Unit(s)
+    </li>
+  </ul>
+</div>

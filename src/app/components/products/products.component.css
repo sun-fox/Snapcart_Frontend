@@ -1,0 +1,73 @@
+.product-header {
+  background: #e2e2e2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  height: 48px;
+  line-height: 40px;
+  border-bottom: solid 3px rgb(110, 200, 155);
+}
+
+.product-body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 10px;
+  position: absolute;
+  top: 48px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  text-align: left;
+}
+
+/* .product-search {
+  float: right;
+  margin-right: 10px;
+} */
+
+.searchbox {
+  position: absolute;
+  right: 2px;
+}
+
+.searchbox input {
+  width: 170px;
+  border: 1px solid #cecbcb;
+  padding: 8px 20px;
+  padding-left: 38px;
+  margin: 6px;
+  background: url("https://demo2.odoo.com/point_of_sale/static/src/img/search.png")
+    no-repeat 15px;
+  background-color: white;
+  border-radius: 20px;
+  font-family: "Lato", "Lucida Grande", Helvetica, Verdana, Arial;
+  font-size: 13px;
+}
+
+.search-clear {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 11px;
+  left: 11px;
+  cursor: pointer;
+}
+
+/*
+ *  STYLE 3
+ */
+
+#style-3::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+#style-3::-webkit-scrollbar {
+  width: 3px;
+  background-color: #f5f5f5;
+}
+
+#style-3::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}

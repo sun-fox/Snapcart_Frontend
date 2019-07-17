@@ -1,0 +1,78 @@
+.cart {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 244px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: white;
+}
+
+.order {
+  padding-bottom: 8px;
+  padding-top: 8px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.summary {
+  width: 100%;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.line {
+  float: right;
+  margin-right: 15px;
+  margin-left: 15px;
+  padding-top: 5px;
+  border-top: solid 2px;
+  border-color: #777;
+  margin-bottom: 20px;
+}
+
+.summary .total {
+  font-size: 22px;
+}
+
+.summary .line .subentry {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.order .order-empty {
+  text-align: center;
+  margin: 48px;
+  color: #ddd;
+}
+
+.order .order-empty h1 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.order .order-empty .fa {
+  font-size: 64px;
+}
+
+/*
+ *  STYLE 3
+ */
+
+#style-3::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+#style-3::-webkit-scrollbar {
+  width: 3px;
+  background-color: #f5f5f5;
+}
+
+#style-3::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
