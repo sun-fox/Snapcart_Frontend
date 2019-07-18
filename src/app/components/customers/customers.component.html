@@ -1,7 +1,11 @@
 <div class="body-back">
   <div class="customer-header">
     <div class="searchbox">
+    <button mat-button routerLink="/">HOME</button>
     <button mat-raised-button (click)="openDialog()">Create Customer</button>
+    <!-- <nav id="navbr">
+        <a id="link" routerLink="/">HOME  </a> | <a id="link" routerLink="/customers">Customers</a>
+      </nav> -->
       <input type="search" id="searchItem" name="searchItem" [(ngModel)]="searchItem" (keyup)="onSearch(searchItem)"
         placeholder="Search Customers" />
       <span class="search-clear"></span>

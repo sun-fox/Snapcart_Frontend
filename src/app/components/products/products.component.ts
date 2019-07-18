@@ -1,6 +1,8 @@
 import { Component, OnInit, EventEmitter, Output } from "@angular/core";
 import { Product } from "src/app/models/Product";
 import { ProductService } from "../../services/product.service";
+import { MatDialog } from "@angular/material";
+import { PopUpProductFormComponent } from '../pop-up-product-form/pop-up-product-form.component';
 
 @Component({
   selector: "app-products",
@@ -12,7 +14,7 @@ export class ProductsComponent implements OnInit {
 
   products: Product[];
 
-  constructor(private productService: ProductService) {}
+  constructor(private productService: ProductService,public dailog : MatDialog) {}
 
   ngOnInit() {
     this.productService.getProducts().subscribe(products => {
@@ -34,5 +36,14 @@ export class ProductsComponent implements OnInit {
 
   addToCart(product: Product) {
     this.onAddToCart.emit(product);
+    console.log("recieved at products component")
   }
+
+  openDialog(){
+    let dialogRef = this.dailog.open(PopUpProductFormComponent);
+ 
+    dialogRef.afterClosed().subscribe(result =>{
+       console.log('submission status:' +result)
+    })
+   }
 }

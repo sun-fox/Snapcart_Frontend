@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { OrderConfirmPopUpComponent } from '../order-confirm-pop-up/order-confirm-pop-up.component';
+import { MatDialog } from "@angular/material";
+
 
 @Component({
   selector: 'app-keypad',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KeypadComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dailog:MatDialog) { }
 
   ngOnInit() {
+    // console.log
   }
 
+  openDialog(){
+    let dialogRef = this.dailog.open(OrderConfirmPopUpComponent);
+ 
+    dialogRef.afterClosed().subscribe(result =>{
+       console.log('submission status:' +result)
+    })
+   }
 }

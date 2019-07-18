@@ -14,7 +14,7 @@
 }
 
 header {
-  height: 48px;
+  height: 70px;
   text-align: center;
   background-color: #333333;
   color: antiquewhite;
@@ -65,4 +65,16 @@ footer {
   left: 440px;
   /* background: rgb(224, 224, 224); */
   border-left: solid 1px rgb(200, 200, 200);
+}
+
+#navbar-color a{
+  color:whitesmoke;
+  text-decoration: none;
+}
+#navbar-color{
+  color:#fff;
+  margin-top:0px;
+  padding-top: 0px;
+  /* font-weight: 900; */
+  /* font-size: 3rem; */
 }

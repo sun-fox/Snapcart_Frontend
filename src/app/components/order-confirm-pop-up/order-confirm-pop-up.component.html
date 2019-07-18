@@ -1,0 +1,71 @@
+<!-- <p>Do You Really want to conform Order!!</p> -->
+<!-- <div class="cart" id="style-3" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+        <div class="order">
+          <div class="order-empty" *ngIf="!total_amount">
+            <i
+              aria-label="Shopping cart"
+              class="fa fa-shopping-cart"
+              role="img"
+              title="Shopping cart"
+            ></i>
+            <h1>Your shopping cart is empty</h1>
+          </div> -->
+<!-- <app-cart-item
+            *ngFor="let cart_item of cart_items"
+            [cart_item]="cart_item"
+          ></app-cart-item>
+          <div class="summary" *ngIf="total_amount">
+            <div class="line">
+              <div class="entry total">
+                <span class="badge">Total: </span>
+                <span class="value">₹ {{ total_amount }}</span>
+                <div class="subentry">Taxes: <span class="value">₹ 0.00</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+<div class="dialog-container">
+  <h4>Your Order</h4>
+  <p>Please Verify the details:</p>
+  <hr>
+  <div style="overflow-y:scroll; overflow-x:hidden; height:250px;">
+    <div *ngFor="let cart_item of cart_items">
+      <div class="row">
+        <div class="col-2">
+          <div style="height:70px">
+            <!-- "{{ imgBaseUrl + cart_item.image }}" -->
+            <img src="{{ imgBaseUrl + cart_item.image }}" onError="this.src='https://via.placeholder.com/150';"
+              alt="product thumbnail" style="width:70px" />
+          </div>
+        </div>
+        <div class="col-10">
+          <span class="product-name">
+            {{ cart_item.name }}
+          </span>
+          <span class="price"> ₹ {{ cart_item.price * cart_item.quantity }} </span>
+          <ul class="info-list">
+            <li class="info">
+              <em>
+                {{ cart_item.quantity }}
+              </em>
+              Unit(s) at ₹ {{ cart_item.price }} / Unit(s)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="entry total col align-self-end">
+      <span class="badge">Total: </span>
+      <span class="value">₹ {{ total_amount }}</span>
+      <div class="subentry">Taxes: <span class="value">₹ 0.00</span></div>
+    </div>
+  </div>
+  <hr>
+  <button class="btn btn-primary">Cancel Order</button>
+  <button class="btn btn-success" (click)="openDilaog()">Place Order</button>
+</div>

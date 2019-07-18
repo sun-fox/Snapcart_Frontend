@@ -1,8 +1,11 @@
 .keypad {
   position: absolute;
+  height:100%;
+  width:100%;
   bottom: 0px;
   left: 0px;
   right: 0px;
   height: 244px;
   border-top: solid 3px rgb(110, 200, 155);
+  background-color: #28A745;
 }

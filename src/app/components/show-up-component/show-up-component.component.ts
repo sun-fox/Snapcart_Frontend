@@ -21,7 +21,7 @@ export class ShowUpComponentComponent implements OnInit {
     console.log(this.customer);
   }
   onUpdateCustomer(formData: NgForm) {
-    console.log(formData.value);
+    console.log("ShowUpComponent",formData.value);
     this.customerService.setCustomer(formData.value,this.customer_id).subscribe(responseData => {
       console.log(responseData);
     });

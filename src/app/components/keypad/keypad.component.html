@@ -1,3 +1,63 @@
-<div class="keypad">
-  <p>KEYPAD AREA</p>
+<div class="keypad container">
+  <div class="row">
+    <div class="col-4">
+      <button class="btn btn-lg btn-block btn-success">Customer</button>
+    </div>
+    <div class="col-4">
+      <div class="row">
+        <button class="col-4 btn btn-success btn-lg ">7</button>
+        <button class="col-4 btn btn-success btn-lg ">8</button>
+        <button class="col-4 btn btn-success btn-lg ">9</button>
+      </div>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-block btn-success">Quantity</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <button class="btn btn-lg btn-block btn-success" (click)="openDialog()">Checkout</button>
+    </div>
+    <div class="col-4">
+      <div class="row">
+        <button class="col-4 btn btn-success btn-lg ">4</button>
+        <button class="col-4 btn btn-success btn-lg ">5</button>
+        <button class="col-4 btn btn-success btn-lg ">6</button>
+      </div>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-block btn-success">Discount</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <button class="btn btn-lg btn-block btn-success"></button>
+    </div>
+    <div class="col-4">
+      <div class="row">
+        <button class="col-4 btn btn-success btn-lg ">1</button>
+        <button class="col-4 btn btn-success btn-lg ">2</button>
+        <button class="col-4 btn btn-success btn-lg ">3</button>
+      </div>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-block btn-success">Price</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <button class="btn btn-lg btn-block btn-success"></button>
+    </div>
+    <div class="col-4">
+      <div class="row">
+        <button class="col-4 btn btn-success btn-lg ">+/-</button>
+        <button class="col-4 btn btn-success btn-lg ">0</button>
+        <button class="col-4 btn btn-success btn-lg ">.</button>
+      </div>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-block btn-success">Delete</button>
+    </div>
+  </div>
+  <!-- <span class="value">₹ {{ total_amount }}</span> -->
 </div>

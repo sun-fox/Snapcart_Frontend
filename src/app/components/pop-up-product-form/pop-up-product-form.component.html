@@ -1,0 +1,45 @@
+<form #f="ngForm" (ngSubmit)="onSubmitProduct(f)" novalidate>
+    <h2 mat-dialog-title>Product Credentials</h2>
+    <mat-dialog-content>Please fill in the details</mat-dialog-content>
+    <mat-form-field>
+        <input id="name" matInput placeholder="Product's Name" ngModel name="name">
+    </mat-form-field>
+    <mat-form-field>
+      <input id="model" matInput placeholder="Product's Model" ngModel name="model">
+  </mat-form-field>
+
+    <mat-form-field>
+        <textarea id="description" matInput placeholder="Description of the Product" ngModel name="description"></textarea>
+    </mat-form-field>
+      
+        <mat-form-field>
+      
+          <input id="image" matInput placeholder="Image URL" ngModel name="image">
+        </mat-form-field>
+      
+        <mat-form-field>
+          <input id="Price" matInput placeholder="Price" ngModel name="Price">
+        </mat-form-field>
+
+        <!-- <mat-form-field>
+          <mat-select placeholder="Category">
+            <mat-option value="Fashion & Style">Fashion & Style</mat-option>
+            <mat-option value="Electronics & Applicances">Electronics & Applicances</mat-option>
+            <mat-option value="Toys, Baby Products, Kids' Fashion">Toys, Baby Products, Kids' Fashion</mat-option>
+            <mat-option value="Music,Movies,Gaming,Software">Music,Movies,Gaming,Software</mat-option>
+          </mat-select>
+        </mat-form-field> -->
+      
+        <!-- <mat-form-field>
+              <input matInput placeholder="Enter your email" [formControl]="email" required>
+              <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+           -->
+        <!-- <mat-form-field>
+          <input id="phone" matInput placeholder="Customer's Whatsapp No." ngModel name="telephone">
+        </mat-form-field> -->
+        <mat-dialog-actions>
+            <button mat-button mat-dialog-close mat-dialog-close="false">Cancel</button>
+            <button class="btn btn-sm btn-success submit-button" type="submit">Submit</button>
+        </mat-dialog-actions>
+      </form> 

@@ -1,42 +1,3 @@
-<!-- <form class="dialog-container" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
-  <h2 mat-dialog-title>Customer Credentials</h2>
-  <mat-dialog-content>Please fill in the details</mat-dialog-content>
-  <div class="example-container">
-    <mat-form-field>
-
-      <input id="firstname" matInput placeholder="Customer's Firstname" ngModel name="firstname">
-    </mat-form-field>
-
-    <mat-form-field>
-
-      <input id="lastname" matInput placeholder="Customer's Lastname" ngModel name="lastname">
-    </mat-form-field>
-
-    <mat-form-field>
-
-      <input id="imageurl" matInput placeholder="Image URL" ngModel name="imageurl">
-    </mat-form-field>
-
-    <mat-form-field>
-
-      <input id="email" matInput placeholder="Customer's Email" ngModel name="email">
-    </mat-form-field>
-
-    <mat-form-field>
-      <input matInput placeholder="Enter your email" [formControl]="email" required>
-      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-    </mat-form-field>
-
-    <mat-form-field>
-      <input id="phone" matInput placeholder="Customer's Whatsapp No." ngModel name="phone">
-    </mat-form-field>
-    <mat-dialog-actions>
-      <button mat-button mat-dialog-close mat-dialog-close="false">Cancel</button>
-      <button mat-button mat-dialog-close mat-dialog-close="true" type="submit"">Submit</button>
-    </mat-dialog-actions>
-  </div>
-</form> -->
-
 <form #f="ngForm" (ngSubmit)="onSubmitCustomer(f)" novalidate>
   <h2 mat-dialog-title>Customer Credentials</h2>
   <mat-dialog-content>Please fill in the details</mat-dialog-content>
@@ -72,15 +33,4 @@
       <button mat-button mat-dialog-close mat-dialog-close="false">Cancel</button>
       <button class="btn btn-sm btn-success submit-button" type="submit">Submit</button>
   </mat-dialog-actions>
-
-  <!-- <script>
-    var XHR = new XMLHttpRequest();
-    XHR.onreadystatechange=function(){
-      if(XHR.readyState==4 && XHR.status==200){
-        console.log(XHR.responseText)
-      }
-    }
-    XHR.open("POST","http://localhost:3000/snapcart/customer/customer_id/new");
-    XHR.send(f);
-  </script> -->
 </form>

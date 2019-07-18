@@ -1,0 +1,20 @@
+<div>
+    <!-- <div class="main-container">
+        <div class="main-header">
+            <header>
+                <h4>SnapCart</h4>
+                <nav class="navbar-color">
+                    <a routerLink="/">HOME</a> | <a routerLink="/customers">customers</a>
+                </nav>
+            </header>
+        </div> -->
+        <div class="main-content">
+            <div class="content-left">
+                <app-cart [total_amount]=total_amount></app-cart>
+                <app-keypad></app-keypad>
+            </div>
+            <div class="content-right">
+                <app-products (onAddToCart)="addToCart($event)"></app-products>
+            </div>
+        </div>
+    </div>
