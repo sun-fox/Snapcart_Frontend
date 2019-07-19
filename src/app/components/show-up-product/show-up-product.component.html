@@ -1,0 +1,29 @@
+<form #f="ngForm" (ngSubmit)="onUpdateProduct(f)" novalidate>
+        <h2 mat-dialog-title>Product Credentials</h2>
+        <mat-dialog-content>Please fill in the details :</mat-dialog-content>
+        <mat-form-field>
+            <input id="name" matInput ngModel name="name" [(ngModel)]="product.name">
+        </mat-form-field>
+    
+        <mat-form-field>
+            <input id="model" matInput [(ngModel)]="product.model" ngModel name="model">
+        </mat-form-field>
+    
+        <mat-form-field>
+            <input id="image" matInput [(ngModel)]="product.image" ngModel name="image">
+        </mat-form-field>
+    
+        <mat-form-field>
+            <textarea id="description" matInput [(ngModel)]="product.description" ngModel name="description"></textarea>
+        </mat-form-field>
+    
+        <mat-form-field>
+            <input id="price" matInput [(ngModel)]="product.price" ngModel name="price">
+        </mat-form-field>
+    
+        <mat-dialog-actions>
+            <button mat-button mat-dialog-close mat-dialog-close="false">Cancel</button>
+            <button class="btn btn-sm btn-success submit-button" type="submit">Submit</button>
+        </mat-dialog-actions>
+    
+    </form>

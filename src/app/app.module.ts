@@ -21,10 +21,11 @@ import { ViewPaneComponent } from './components/view-pane/view-pane.component';
 import { PopUpProductFormComponent } from './components/pop-up-product-form/pop-up-product-form.component';
 import { OrderConfirmPopUpComponent } from './components/order-confirm-pop-up/order-confirm-pop-up.component';
 import { SelectCustomerPopUpComponent } from './components/select-customer-pop-up/select-customer-pop-up.component';
+import { ShowUpProductComponent } from './components/show-up-product/show-up-product.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductsComponent, ProductItemComponent, CartComponent, KeypadComponent, CartItemComponent, CustomersComponent, CustomerItemComponent, PopUpFormComponent, ShowUpComponentComponent, ViewPaneComponent, PopUpProductFormComponent, OrderConfirmPopUpComponent, SelectCustomerPopUpComponent],
-  entryComponents: [PopUpFormComponent, ShowUpComponentComponent,PopUpProductFormComponent,OrderConfirmPopUpComponent,SelectCustomerPopUpComponent ],
+  declarations: [AppComponent, ProductsComponent, ProductItemComponent, CartComponent, KeypadComponent, CartItemComponent, CustomersComponent, CustomerItemComponent, PopUpFormComponent, ShowUpComponentComponent, ViewPaneComponent, PopUpProductFormComponent, OrderConfirmPopUpComponent, SelectCustomerPopUpComponent, ShowUpProductComponent],
+  entryComponents: [PopUpFormComponent,ShowUpProductComponent, ShowUpComponentComponent,PopUpProductFormComponent,OrderConfirmPopUpComponent,SelectCustomerPopUpComponent ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, NgbModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule, MaterialModule],
   providers: [],
   bootstrap: [AppComponent]

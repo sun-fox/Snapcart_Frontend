@@ -1,4 +1,4 @@
-<div class="card" (click)="onAddToCart(product)">
+<div class="card"  (dblclick)="openDialog(product.product_id)" (click)="onAddToCart(product)">
   <div style="height:118px">
     <img
       src="{{ imgBaseUrl + product.image }}"
